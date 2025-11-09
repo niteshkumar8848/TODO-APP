@@ -1,0 +1,64 @@
+/* Add to existing style.css */
+.task-overdue {
+    border-left-color: #dc3545 !important;
+    background: #fff5f5;
+}
+
+.deadline.overdue {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.priority-badge {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.priority-badge.priority-high {
+    background: #dc3545;
+    color: white;
+}
+
+.priority-badge.priority-medium {
+    background: #ffc107;
+    color: #212529;
+}
+
+.priority-badge.priority-low {
+    background: #28a745;
+    color: white;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.task-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    min-width: 150px;
+}
+
+@media (max-width: 768px) {
+    .task-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .task-meta {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
